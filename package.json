@@ -2,13 +2,17 @@
   "name": "wakati",
   "scripts": {
     "dev": "wrangler dev",
+    "lint": "eslint .",
+    "link:fix": "bun run lint --fix",
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "hono": "^4.6.10"
+    "hono": "^4.6.16"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241022.0",
-    "wrangler": "^3.83.0"
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "wrangler": "^3.96.0",
+    "@antfu/eslint-config": "^3.12.1",
+    "eslint": "^9.17.0"
   }
 }
