@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@hono/zod-openapi": "^0.18.3",
+    "@scalar/hono-api-reference": "^0.5.165",
     "hono": "^4.6.16",
     "hono-pino": "^0.7.0",
     "pino": "^9.6.0",
