@@ -1,20 +1,7 @@
-import { OpenAPIHono } from '@hono/zod-openapi'
-import { logger } from '@/middlewares/pino-logger'
-import { notFound, onError } from 'stoker/middlewares'
+import createApp from '@/lib/create-app'
 
-const app = new OpenAPIHono()
+const app = createApp()
 
-app.use(logger())
-
-app.notFound(notFound)
-app.onError(onError)
-
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
-
-app.get("/error", (c) => {
-  throw new Error("This is an error")
-})
+app.get('/hey', (c) => c.text('Route is working!'))
 
 export default app
