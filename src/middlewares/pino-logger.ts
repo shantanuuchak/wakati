@@ -1,5 +1,9 @@
 import {pinoLogger} from "hono-pino";
 
 export function logger() {
-    return pinoLogger();
+    return pinoLogger({
+        http: {
+            reqId: () => crypto.randomUUID(),
+        }
+    });
 }
