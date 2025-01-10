@@ -1,6 +1,7 @@
 {
   "name": "wakati",
   "version": "1.0.0",
+  "description": "Powerful text intelligence API that provides insights like read time, text complexity, word count, and more, enabling developers to seamlessly analyze and optimize content for better engagement.",
   "scripts": {
     "dev": "wrangler dev",
     "lint": "eslint .",
