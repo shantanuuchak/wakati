@@ -1,6 +1,7 @@
 name = "wakati"
 main = "src/index.ts"
 compatibility_date = "2025-01-08"
+assets = { directory = "public" }
 
 # compatibility_flags = [ "nodejs_compat" ]
 
