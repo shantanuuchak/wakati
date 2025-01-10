@@ -13,7 +13,7 @@ export default function createApp() {
     const app = createRouter()
 
     app.use(cors())
-    app.use(logger())
+    // app.use(logger())
 
     app.notFound(notFound)
     app.onError(onError)
