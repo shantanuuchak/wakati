@@ -1,8 +1,3 @@
-```
-npm install
-npm run dev
-```
+# Wakati
 
-```
-npm run deploy
-```
+The project is now ported to @tiwakati
